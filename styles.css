@@ -1,5 +1,5 @@
 body {
-    display: flex;
+    display: flex; 
     flex-direction: row;
 }
 
@@ -58,12 +58,31 @@ a:active {
 
 .right-container {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+
 }
 
 .description {
-    margin: 10px 50px 90px 50px;
+    margin: 20px 20px 20px 20px;
     font-family: lucymar-sans, 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: rgb(16, 62, 16);
+    line-height: 130%;
 }
+
+.description-box {
+    display: flex;
+    height: 250px;
+    background-color: rgb(242, 239, 239);
+}
+
+
+.form {
+    margin: 20px 20px 20px 20px;
+    font-family: lucymar-sans, 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana,    sans-serif;
+} 
+
+.signup-text {
+    color: rgb(16, 62, 16);
+}
+
 
