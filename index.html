@@ -16,7 +16,7 @@
                 <h3 id="puppets">PupPets</h3>
             </div>
         </div>
-        <h6 id="photo-author">Photo by <a href="https://unsplash.com/@misterdoulou?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Good Days Digital</a> on <a href="https://unsplash.com/photos/woman-holding-black-puppys-head-fbBp7OqElmI?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+        <h6 id="photo-author">Photo by <a class="author" href="https://unsplash.com/@misterdoulou?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Good Days Digital</a> on <a class="author" href="https://unsplash.com/photos/woman-holding-black-puppys-head-fbBp7OqElmI?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
         </h6>
     </div>
 
@@ -25,15 +25,47 @@
             <div class="description">
                 <h2>Welcome to PupPets!</h3>
                 <h3>Are you a puppy that needs more pets?</h3>
-                <p id="describe">Whether you're a seasoned snuggle enthusiast, or a first-time tail-wagger, our petting sessions promise to leave your fur fluffed, your spirits soaring, and your heart content. From gentle head pats to full-body massages, we've got all your petting preferences covered.</p>
+                <p>Whether you're a seasoned snuggle enthusiast, or a first-time tail-wagger, our petting sessions promise to leave your fur fluffed, your spirits soaring, and your heart content. From gentle head pats to full-body massages, we've got all your petting preferences covered.</p>
             </div>
         </div>
         <div class="form">
             <h2 class="signup-text">Sign up now for professional pampering!</h3>
             <form>
-                <label for="first-name">FIRST NAME</label>
-                <input type="text" id="first-name"> 
+                <div class="name">
+                    <div class="first">
+                        <label for="first-name">FIRST NAME</label>
+                        <input type="text" id="first-name" required>
+                    </div>
+                    <div class="last">
+                        <label for="last-name">LAST NAME</label>
+                        <input type="text" id="last-name" required>
+                    </div>
+                </div>
+                <div class="contact">
+                    <div class="email">
+                        <label for="email">EMAIL</label>
+                        <input type="email" id="email" required>
+                    </div>
+                    <div class="phone">
+                        <label for="phone">PHONE NUMBER</label>
+                        <input type="tel" id="phone" required>
+                    </div>
+                </div>
+                <div class="password">
+                    <div class="pwd error">
+                        <label for="password">PASSWORD</label>
+                        <input type="password" id="password" required>
+                    </div>
+                    <div class="confirm-pass error">
+                        <label for="confirm-password">CONFIRM PASSWORD</label>
+                        <input type="password" id="confirm-password" required>
+                    </div>
+                </div>
             </form>
+        </div>
+        <div class="account">
+            <a href="https://www.youtube.com/watch?v=EcOE1ScBozI&ab_channel=CuiwasieniPictures"><button class="create">Create Account</button></a>
+            <p class="login">Already have an account? <a class="login-link" href="https://www.youtube.com/watch?v=2ko5FQyDiS0&ab_channel=CutestPuppiesCity">Log in</a></p>
         </div>
     <div>
 </body>

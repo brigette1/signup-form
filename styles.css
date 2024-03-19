@@ -3,11 +3,6 @@ body {
     flex-direction: row;
 }
 
-@font-face {
-    font-family: lucymar-sans;
-    src: url(perun/Perun-Bold.otf);
-}
-
 .left-container {
     position: relative;
 }
@@ -23,18 +18,18 @@ body {
     position: relative; 
     background-color: rgb(0 51 0 / .5);
     width: 550px;
-    height: 100px;
+    height: 120px;
 }
 
 #puppets {
     position: absolute; 
     left: 50%;
     transform: translate(-50%, -50%);
-    font-family: lucymar-sans, 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-weight: normal;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: bold;
     font-style: normal;
     color: white; 
-    font-size: 3.5rem;
+    font-size: 3.9rem;
 }
 
 #photo-author {
@@ -43,16 +38,16 @@ body {
     left: 50%; 
     transform: translate(-50%, -50%);
     color: white;
-    font-family: lucymar-sans, 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: Helvetica, Arial, sans-serif;
 }
 
-a:link, 
-a:visited {
+a.author:link, 
+a.author:visited {
     color: white;
 }
 
-a:hover, 
-a:active {
+a.author:hover, 
+a.author:active {
     color: rgb(red, rgb(25, 137, 25), blue)
 }
 
@@ -63,26 +58,111 @@ a:active {
 }
 
 .description {
-    margin: 20px 20px 20px 20px;
-    font-family: lucymar-sans, 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    flex-basis: auto;
+    margin: 20px;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: .85rem;
     color: rgb(16, 62, 16);
-    line-height: 130%;
+    line-height: 120%;
+    overflow: auto;
 }
 
 .description-box {
+
     display: flex;
-    height: 250px;
+    height: 25%;
     background-color: rgb(242, 239, 239);
 }
 
 
 .form {
-    margin: 20px 20px 20px 20px;
-    font-family: lucymar-sans, 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana,    sans-serif;
+    margin: 5px 20px;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 1rem;
 } 
+
+.name, 
+.contact, 
+.password {
+    display: flex; 
+    flex-direction: row;
+    font-size: .7rem;
+    gap: 40px;
+}
+
+.first, 
+.last,
+.email, 
+.phone, 
+.pwd, 
+.confirm-pass {
+    display: flex; 
+    flex-direction: column;
+    margin: 10px 25px 10px 0px;
+    color: rgb(86, 90, 87);
+    font-weight: bold;
+    letter-spacing: .2rem;
+}
+
+input {
+    width: 120%; 
+    padding: 8px 15px;
+    box-sizing: border-box;
+    border: solid .8px rgb(153, 156, 154);
+    border-radius: 6px;
+}
+
+input:focus {
+    border: solid 1px rgb(20, 98, 154);
+    outline: none;
+    box-shadow: 1px 1px 1px rgb(165, 182, 228);
+}
+
+
+.account {
+    height: 26%;
+    background-color: rgb(242, 239, 239);
+}
+
+.create {
+    background-color: rgb(110, 151, 110);
+    border: none;
+    box-shadow: 3px 5px 5px rgb(234, 231, 231);
+    margin: 40px 20px 20px 20px;
+    padding: 20px 40px;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    font-size: 1rem;
+    letter-spacing: .1rem;
+    color: white;
+    border-radius: 8px;
+}
+
+.login{
+    margin: 20px 20px;
+    font-family: Helvetica, Arial, sans-serif;
+}
 
 .signup-text {
     color: rgb(16, 62, 16);
 }
+
+a.login-link:link, 
+a.login-link:visited,
+a.login-link:hover, 
+a.login-link:active {
+    color: rgb(16, 62, 16);
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+
+
 
 
